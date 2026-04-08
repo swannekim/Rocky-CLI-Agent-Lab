@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "command": "bash tools/hooks/session-start-banner.sh"
+      }
+    ],
+    "userPromptSubmitted": [
+      {
+        "command": "bash tools/hooks/log-prompt.sh"
+      }
+    ]
+  }
+}

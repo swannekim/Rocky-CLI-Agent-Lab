@@ -96,6 +96,7 @@ rocky-cli-agent-lab/
 ## Quick start
 
 ### 1) Install GitHub Copilot CLI
+> [GitHub Docs: Installing GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/install-copilot-cli)
 
 Examples:
 
@@ -118,6 +119,8 @@ copilot
 ```
 
 Authenticate if needed:
+> [GitHub Docs: Authenticating GitHub Copilot CLI
+](https://docs.github.com/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/authenticate-copilot-cli)
 
 ```text
 /login
@@ -242,20 +245,6 @@ A reusable rewrite skill that turns neutral text into Rocky-style text.
 
 ### `.github/hooks/workshop-hooks.example.json`
 An optional hooks example for workshop-safe enhancements.
-
----
-
-## Suggested workshop timing
-
-**Total:** 75 to 90 minutes
-
-- 10 min — install and authentication
-- 10 min — baseline tests
-- 15 min — repository instructions
-- 20 min — custom agent
-- 15 min — skill
-- 10 min — live demo and debrief
-- optional 10 min — hooks discussion
 
 ---
 

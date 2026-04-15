@@ -62,33 +62,49 @@ The goal is **useful output with a distinct rhythm**.
 
 ```text
 rocky-cli-agent-lab/
-├─ .github/
-│  ├─ copilot-instructions.md
-│  ├─ agents/
-│  │  └─ rocky-guide.agent.md
-│  ├─ hooks/
-│  │  └─ workshop-hooks.example.json
-│  └─ skills/
-│     └─ rocky-voice/
-│        └─ SKILL.md
-├─ docs/
-│  ├─ facilitator-guide.md
-│  ├─ participant-workbook.md
-│  ├─ demo-runbook.md
-│  ├─ setup-and-troubleshooting.md
-│  └─ adaptation-notes.md
-├─ prompts/
-│  ├─ 01-baseline.md
-│  ├─ 02-explainer-api.md
-│  ├─ 03-dialogue-encouragement.md
-│  ├─ 04-mission-brief-dp.md
-│  ├─ 05-rewrite-rocky-voice.md
-│  ├─ 06-debugging-coach.md
-│  └─ 07-live-demo-pack.md
-└─ tools/
-   └─ hooks/
-      ├─ session-start-banner.sh
-      └─ log-prompt.sh
+|- .github/
+|  |- copilot-instructions.md
+|  |- agents/
+|  |  `- rocky-guide.agent.md
+|  |- hooks/
+|  |  |- workshop-hooks.example.json
+|  |  `- session-logger/
+|  |     |- hooks.json
+|  |     |- log-prompt.sh
+|  |     |- log-session-end.sh
+|  |     |- log-session-start.sh
+|  |     `- README.md
+|  `- skills/
+|     `- rocky-voice/
+|        `- SKILL.md
+|- docs/
+|  |- adaptation-notes.md
+|  |- demo-runbook.md
+|  |- facilitator-guide.md
+|  |- participant-workbook.md
+|  `- setup-and-troubleshooting.md
+|- prompts/
+|  |- 01-baseline.md
+|  |- 02-explainer-api.md
+|  |- 03-dialogue-encouragement.md
+|  |- 04-mission-brief-dp.md
+|  |- 05-rewrite-rocky-voice.md
+|  |- 06-debugging-coach.md
+|  `- 07-live-demo-pack.md
+|- tools/
+|  `- evals/
+|     |- clarity/
+|     |- outputs/
+|     |- persona/
+|     |- rewrite/
+|     |- README.md
+|     |- eval_lib.py
+|     |- run-evals.py
+|     |- save-output.py
+|     `- validate-output.py
+|- logs/
+|- LICENSE
+`- README.md
 ```
 
 ---
@@ -191,7 +207,7 @@ Use the /rocky-voice skill to rewrite:
 
 ## Workshop learning arc
 
-### Stage 1 — Baseline
+### Stage 1 - Baseline
 Ask a normal technical question before adding any special framing.
 
 Participants observe:
@@ -199,7 +215,7 @@ Participants observe:
 - reasonable content
 - weak identity
 
-### Stage 2 — Repository instructions
+### Stage 2 - Repository instructions
 Show how the repo-wide instructions affect style and structure.
 
 Participants observe:
@@ -207,7 +223,7 @@ Participants observe:
 - more consistent organization
 - better beginner friendliness
 
-### Stage 3 — Custom agent
+### Stage 3 - Custom agent
 Introduce the Rocky-style agent.
 
 Participants observe:
@@ -215,7 +231,7 @@ Participants observe:
 - more recognizable rhythm
 - better themed outputs for demos
 
-### Stage 4 — Skill
+### Stage 4 - Skill
 Use the voice skill for on-demand rewriting.
 
 Participants observe:
@@ -223,7 +239,7 @@ Participants observe:
 - skills are best for task-specific behavior
 - instructions and skills serve different purposes
 
-### Stage 5 — Optional hooks
+### Stage 5 - Optional hooks
 Show how hooks can add workshop banners or logging without changing the persona itself.
 
 ---

@@ -1,4 +1,12 @@
 .DS_Store
 *.log
+*.pyc
+__pycache__/
 .idea/
 .vscode/
+docs/demo-runbook.md
+docs/facilitator-guide.md
+logs/
+tools/evals/outputs/*
+!tools/evals/outputs/.gitkeep
+__pycache__/

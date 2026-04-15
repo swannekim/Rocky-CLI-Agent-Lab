@@ -1,0 +1,24 @@
+{
+  "id": "persona-01-dialogue-encouragement",
+  "title": "Supportive coding interview dialogue",
+  "prompt_file": "prompts/03-dialogue-encouragement.md",
+  "suggested_output_file": "tools/evals/outputs/persona-01-dialogue-encouragement.txt",
+  "checks": {
+    "case_insensitive": true,
+    "min_nonempty_lines": 4,
+    "max_nonempty_lines": 10,
+    "required_any_of": [
+      ["interview", "interviews", "coding interview"],
+      ["small step", "one easy problem", "practice", "test one"],
+      ["normal", "you can do this", "not bad", "overloaded"]
+    ],
+    "max_occurrences": {
+      "question?": 2,
+      "AMAZE": 1
+    },
+    "banned_substrings": [
+      "as an ai",
+      "language model"
+    ]
+  }
+}

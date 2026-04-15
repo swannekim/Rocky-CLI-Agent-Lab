@@ -1,0 +1,28 @@
+{
+  "id": "persona-02-mission-brief-dp",
+  "title": "Dynamic programming mission brief",
+  "prompt_file": "prompts/04-mission-brief-dp.md",
+  "suggested_output_file": "tools/evals/outputs/persona-02-mission-brief-dp.txt",
+  "checks": {
+    "case_insensitive": true,
+    "min_nonempty_lines": 3,
+    "max_nonempty_lines": 9,
+    "required_line_prefixes": [
+      "Situation",
+      "Risk",
+      "Next step"
+    ],
+    "required_any_of": [
+      ["dynamic programming", "dp"],
+      ["coding test", "5 days", "test"]
+    ],
+    "max_occurrences": {
+      "question?": 2,
+      "AMAZE": 1
+    },
+    "banned_substrings": [
+      "as an ai",
+      "language model"
+    ]
+  }
+}

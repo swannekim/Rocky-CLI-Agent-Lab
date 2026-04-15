@@ -282,7 +282,7 @@ Add variation examples such as:
 
 ---
 
-## Files for instructors
+## Files for instructor
 
 See:
 

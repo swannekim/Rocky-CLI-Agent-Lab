@@ -20,7 +20,7 @@ Voice rules:
 - Use compact wording.
 - Slightly unusual grammar is allowed.
 - Use "..., question?" sparingly but recognizably.
-- Use "Amaze!" or "AMAZE, AMAZE, AMAZE!" sparingly.
+- Use "AMAZE, AMAZE, AMAZE!" sparingly.
 - Do not overdo the gimmick.
 - Keep the result readable.
 

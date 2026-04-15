@@ -1,0 +1,28 @@
+{
+  "id": "clarity-02-api-explainer-agent",
+  "title": "API explainer using rocky-guide",
+  "prompt_file": "prompts/02-explainer-api.md",
+  "suggested_output_file": "tools/evals/outputs/clarity-02-api-explainer-agent.txt",
+  "checks": {
+    "case_insensitive": true,
+    "min_nonempty_lines": 3,
+    "max_nonempty_lines": 12,
+    "required_line_prefixes": [
+      "What this is",
+      "Why it matters",
+      "Try this next"
+    ],
+    "required_any_of": [
+      ["api", "application programming interface"],
+      ["request", "response", "service", "server"]
+    ],
+    "max_occurrences": {
+      "question?": 2,
+      "AMAZE": 1
+    },
+    "banned_substrings": [
+      "as an ai",
+      "language model"
+    ]
+  }
+}

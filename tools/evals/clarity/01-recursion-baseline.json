@@ -1,0 +1,20 @@
+{
+  "id": "clarity-01-recursion-baseline",
+  "title": "Beginner recursion baseline",
+  "prompt_file": "prompts/01-baseline.md",
+  "suggested_output_file": "tools/evals/outputs/clarity-01-recursion-baseline.txt",
+  "checks": {
+    "case_insensitive": true,
+    "min_nonempty_lines": 3,
+    "max_nonempty_lines": 12,
+    "required_any_of": [
+      ["recursion", "recursive"],
+      ["base case", "stop condition", "stopping condition"],
+      ["example", "for example", "countdown", "try this"]
+    ],
+    "banned_substrings": [
+      "as an ai",
+      "language model"
+    ]
+  }
+}
